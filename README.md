@@ -1,5 +1,5 @@
 # project-TechnicalDocumentationPage
-* Project topic from: freeCodeCamp - Responsive Web Design Course
+* Project topic from: [freeCodeCamp - Responsive Web Design Projects - Build a Technical Documentation Page](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page/)
 * [Live](https://pocoapocochen.github.io/project-TechnicalDocumentationPage/) version
 
 ## User Story
