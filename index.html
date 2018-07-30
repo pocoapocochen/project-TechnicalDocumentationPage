@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/documentation_style.css">
 </head>
 <body>
- <div id="wrap">
+  
   <nav id="navbar">
   
     <header>React</header>
@@ -31,94 +31,94 @@
     <section id="Introduction" class="main-section">
       <header>Introduction</header>
       <article>
-        <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+      <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
         
-        <p>We’ll assume you have a basic understanding of the JavaScript language. If you don’t feel very confident, we recommend going through a <a class="a-line" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">JavaScript tutorial</a> to check your knowledge level and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.</p>
+      <p>We’ll assume you have a basic understanding of the JavaScript language. If you don’t feel very confident, we recommend going through a <a class="a-line" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">JavaScript tutorial</a> to check your knowledge level and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.</p>
       </article>
     </section>
 
     <section id="About_JSX" class="main-section">
       <header>About JSX</header>
       <article>
-       <p>Consider this variable declaration:</p>
+      <p>Consider this variable declaration:</p>
         
-       <code>
-        <pre>
-        const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
-        </pre>
-       </code>
+      <code>
+      <pre>
+      const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+      </pre>
+      </code>
         
-       <p>This funny tag syntax is neither a string nor HTML.</p>
+      <p>This funny tag syntax is neither a string nor HTML.</p>
         
-        <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
+      <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
 
-        <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
+      <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
         
-        <p>Instead of artificially separating <i>technologies</i> by putting markup and logic in separate files, React separates <i>concerns</i> with loosely coupled units called “components” that contain both.</p>
+      <p>Instead of artificially separating <i>technologies</i> by putting markup and logic in separate files, React separates <i>concerns</i> with loosely coupled units called “components” that contain both.</p>
         
-        <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
+      <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
       </article>
     </section>
     
     <section id="Rendering_Elements" class="main-section">
       <header>Rendering Elements</header>
       <article>
-        <p>Elements are the smallest building blocks of React apps. Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
+      <p>Elements are the smallest building blocks of React apps. Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
         
-        <p>Let’s say there is a <code class="code-line">&lt;div&gt;</code> somewhere in your HTML file:</p>
+      <p>Let’s say there is a <code class="code-line">&lt;div&gt;</code> somewhere in your HTML file:</p>
           
-       <code>
-        <pre>
-        &lt;div id="root"&gt;&lt;/div&gt;
-        </pre>
-       </code>
+      <code>
+      <pre>
+      &lt;div id="root"&gt;&lt;/div&gt;
+      </pre>
+      </code>
           
-        <p>We call this a “root” DOM node because everything inside it will be managed by React DOM.</p> 
+      <p>We call this a “root” DOM node because everything inside it will be managed by React DOM.</p> 
 
-        <p>Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.</p> 
+      <p>Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.</p> 
 
-        <p>To render a React element into a root DOM node, pass both to <code class="code-line">ReactDOM.render()</code>:</p> 
+      <p>To render a React element into a root DOM node, pass both to <code class="code-line">ReactDOM.render()</code>:</p> 
         
-       <code>
-        <pre>
-        const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
-        ReactDOM.render(element, document.getElementById('root'));
-        </pre>
-       </code>
+      <code>
+      <pre>
+      const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+      ReactDOM.render(element, document.getElementById('root'));
+      </pre>
+      </code>
         
-        <p>It displays “Hello, world” on the page.</p>
+      <p>It displays “Hello, world” on the page.</p>
       </article>
     </section>
     
     <section id="Components_and_Props" class="main-section">
       <header>Components and Props</header>
       <article>
-        <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.</p>
+      <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.</p>
         
-        <p>Previously, we only encountered React elements that represent DOM tags. However, elements can also represent user-defined components:</p>
+      <p>Previously, we only encountered React elements that represent DOM tags. However, elements can also represent user-defined components:</p>
         
-       <code>
-        <pre>
-        const element = &lt;Welcome name="Sara" /&gt;;
-        </pre>
-       </code>
+      <code>
+      <pre>
+      const element = &lt;Welcome name="Sara" /&gt;;
+      </pre>
+      </code>
         
-       <p>When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object “props”.</p>
+      <p>When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object “props”.</p>
 
       <p>For example, this code renders “Hello, Sara” on the page:</p>
         
       <code>
-        <pre>
-        function Welcome(props) {
-          return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
-        }
+      <pre>
+      function Welcome(props) {
+        return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+      }
 
-        const element = &lt;Welcome name="Sara" /&gt;;
-        ReactDOM.render(
-          element,
-          document.getElementById('root')
-        );
-        </pre>
+      const element = &lt;Welcome name="Sara" /&gt;;
+      ReactDOM.render(
+        element,
+        document.getElementById('root')
+      );
+      </pre>
       </code>
       
       <p>Let’s recap what happens in this example:</p>
@@ -136,98 +136,95 @@
     <section id="State_and_Lifecycle" class="main-section">
       <header>State and Lifecycle</header>
       <article> 
-       <p>In this section, we will learn how to make the <code class="code-line">Clock</code> component truly reusable and encapsulated. It will set up its own timer and update itself every second. We can start by encapsulating how the clock looks:</p>
+      <p>In this section, we will learn how to make the <code class="code-line">Clock</code> component truly reusable and encapsulated. It will set up its own timer and update itself every second. We can start by encapsulating how the clock looks:</p>
         
-       <code>
-        <pre>
-        function Clock(props) {
+      <code>
+      <pre>
+      function Clock(props) {
+        return (
+          &lt;div&gt;
+            &lt;h1&gt;Hello, world!&lt;/h1&gt;
+            &lt;h2&gt;It is {props.date.toLocaleTimeString()}.&lt;/h2&gt;
+          &lt;/div&gt;
+        );
+      }
+
+      function tick() {
+        ReactDOM.render(
+          &lt;Clock date={new Date()} /&gt;,
+          document.getElementById('root')
+        );
+      }
+
+      setInterval(tick, 1000);
+      </pre>  
+      </code>
+      
+      <p>However, it misses a crucial requirement: the fact that the <code class="code-line">Clock</code> sets up a timer and updates the UI every second should be an implementation detail of the <code class="code-line">Clock</code>. Ideally we want to write this once and have the <code class="code-line">Clock</code> update itself. To implement this, we need to add “state” to the <code class="code-line">Clock</code> component. State is similar to props, but it is private and fully controlled by the component.</p> 
+        
+      <p>You can convert a functional component like <code class="code-line">Clock</code> to a class in five steps:</p>
+        
+      <li>Create an ES6 class, with the same name, that extends <code class="code-line">React.Component</code>.</li>
+      <li>Add a single empty method to it called <code class="code-line">render()</code>.</li>
+      <li>Move the body of the function into the <code class="code-line">render()</code> method.</li>
+      <li>Replace <code class="code-line">props</code> with <code class="code-line">this.props</code> in the <code class="code-line">render()</code> body.</li>
+      <li class="last-child">Delete the remaining empty function declaration.</li>
+        
+      <code>
+      <pre>
+      class Clock extends React.Component {
+        render() {
           return (
             &lt;div&gt;
               &lt;h1&gt;Hello, world!&lt;/h1&gt;
-              &lt;h2&gt;It is {props.date.toLocaleTimeString()}.&lt;/h2&gt;
+              &lt;h2&gt;It is {this.props.date.toLocaleTimeString()}.&lt;/h2&gt;
             &lt;/div&gt;
           );
         }
-
-        function tick() {
-          ReactDOM.render(
-            &lt;Clock date={new Date()} /&gt;,
-            document.getElementById('root')
-          );
-        }
-
-        setInterval(tick, 1000);
-        </pre>  
-       </code>
-      
-       <p>However, it misses a crucial requirement: the fact that the <code class="code-line">Clock</code> sets up a timer and updates the UI every second should be an implementation detail of the <code class="code-line">Clock</code>. Ideally we want to write this once and have the <code class="code-line">Clock</code> update itself. To implement this, we need to add “state” to the <code class="code-line">Clock</code> component. State is similar to props, but it is private and fully controlled by the component.</p> 
-        
-        <p>You can convert a functional component like <code class="code-line">Clock</code> to a class in five steps:</p>
-        
-        <li>Create an ES6 class, with the same name, that extends <code class="code-line">React.Component</code>.</li>
-        <li>Add a single empty method to it called <code class="code-line">render()</code>.</li>
-        <li>Move the body of the function into the <code class="code-line">render()</code> method.</li>
-        <li>Replace <code class="code-line">props</code> with <code class="code-line">this.props</code> in the <code class="code-line">render()</code> body.</li>
-        <li class="last-child">Delete the remaining empty function declaration.</li>
-        
-       <code>
-        <pre>
-        class Clock extends React.Component {
-          render() {
-            return (
-              &lt;div&gt;
-                &lt;h1&gt;Hello, world!&lt;/h1&gt;
-                &lt;h2&gt;It is {this.props.date.toLocaleTimeString()}.&lt;/h2&gt;
-              &lt;/div&gt;
-            );
-          }
-        }  
-        </pre>
-       </code> 
+      }  
+      </pre>
+      </code> 
       </article>
     </section>
     
     <section id="Handling_Events" class="main-section">
       <header>Handling Events</header>
       <article> 
-        <p>
-        Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:  
-        </p>
+      <p>Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:</p>
         
-        <li class="li-circle">React events are named using camelCase, rather than lowercase.</li>
-        <li class="li-circle">With JSX you pass a function as the event handler, rather than a string.</li>
+      <li class="li-circle">React events are named using camelCase, rather than lowercase.</li>
+      <li class="li-circle">With JSX you pass a function as the event handler, rather than a string.</li>
         
-        <p>For example, the HTML:</p>
+      <p>For example, the HTML:</p>
         
-       <code>
-        <pre>
-        &lt;button onclick="activateLasers()"&gt;
-          Activate Lasers
-        &lt;/button&gt;  
-        </pre>
-       </code>
+      <code>
+      <pre>
+      &lt;button onclick="activateLasers()"&gt;
+        Activate Lasers
+      &lt;/button&gt;  
+      </pre>
+      </code>
         
-        <p>is slightly different in React:</p>
+      <p>is slightly different in React:</p>
         
-       <code>
-        <pre>
-        &lt;button onClick={activateLasers}&gt;
-          Activate Lasers
-        &lt;/button&gt; 
-        </pre>
-       </code>
+      <code>
+      <pre>
+      &lt;button onClick={activateLasers}&gt;
+        Activate Lasers
+      &lt;/button&gt; 
+      </pre>
+      </code>
       </article>
     </section>
     
     <section id="Reference" class="main-section">
       <header>Reference</header>
       <article>
-        <p>For more detail, please go to <a class="a-line" href="https://reactjs.org/" target="_blank">React</a> official documentation. And all the documentation in this page is also taken from there.</p>
+      <p>For more detail, please go to <a class="a-line" href="https://reactjs.org/" target="_blank">React</a> official documentation. And all the documentation in this page is also taken from there.</p>
       </article>
     </section>
     
   </main>
- </div>
-	
+
 </body>
 </html>
