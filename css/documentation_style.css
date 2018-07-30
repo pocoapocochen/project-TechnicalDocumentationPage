@@ -3,11 +3,14 @@
   font-family: Verdana, Geneva, sans-serif;
 }
 
-html, body {
+html, body, #wrap {
   margin: 0;
   padding: 0;
 }
 
+#wrap {
+  min-width: 20rem;
+}
 
 /*nav part*/
 nav {
