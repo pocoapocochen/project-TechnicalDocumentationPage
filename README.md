@@ -1,6 +1,6 @@
 # project-TechnicalDocumentationPage
 * Project topic from: freeCodeCamp - Responsive Web Design Course
-* [Live](https://github.com/pocoapocochen/project-TechnicalDocumentationPage) version
+* [Live](https://pocoapocochen.github.io/project-TechnicalDocumentationPage/) version
 
 ## User Story
 * I can ....
