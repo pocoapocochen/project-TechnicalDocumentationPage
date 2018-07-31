@@ -3,14 +3,11 @@
   font-family: Verdana, Geneva, sans-serif;
 }
 
-html, body, #wrap {
+html, body {
   margin: 0;
   padding: 0;
 }
 
-#wrap {
-  min-width: 20rem;
-}
 
 /*nav part*/
 nav {
@@ -110,6 +107,16 @@ li {
 
 .last-child {
   margin-bottom: 1.25rem;
+}
+
+#copyright {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#copyright a {
+  color: #000000;
 }
 
 @media (max-width: 60rem) {
